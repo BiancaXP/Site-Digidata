@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --cor-principal: #071952;
+    --cor-secundaria: #54575a;
+    --cor-apoio: #4ea6da;
+    --cor-terciaria: #ffffff;
+    --cor-quartenaria: #000000;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-principal);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+#menu {
+    display: flex;
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+.principal {
+    font-family: var(--fonte-principal);
+    background-color: rgb(241, 241, 241);
+}
+
+.cabecalho__logo-icon {
+    display: none;
+}
+
+.cabecalho__logo {
+    width: 200px;
+    padding: 10px;
+}
+
+.cabecalho__opcoes-item {
+    padding: 10px;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho__opcoes-item:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    padding: 20px 10px;
+}
+
+.home {
+    padding: 5% 20%;
+}
+
+.home__conteudo {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.home__texto-img {
+    float: right;
+    padding: 3rem;
+    margin: 0 0 20px 20px;
+    height: 300px;
+   
+}
+
+
+.home__titulo, .servicos__titulo, .contato__titulo {
+    font-weight: 600;
+    color: var(--cor-principal);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--cor-principal);
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.home__texto {
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+
+}
+
+.produtos {
+    display: block;
+    padding: 5% 20%;
+    background: linear-gradient(var(--cor-apoio), var(--cor-principal));
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+
+.produtos__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--cor-terciaria);
+}
+
+.swiper {
+    width: 100%;
+}
+
+
+.servicos {
+	display: flex;
+    padding: 5% 20%;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 2rem;
+	color: var(--cor-secundaria);
+}
+
+.servicos__lista {
+    display: flex;
+    flex-flow: wrap;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.servicos__lista-item {
+    display: flex;
+    width: 20%;
+    height: 200px;
+    margin: 10px 20px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+    border: 2px solid var(--cor-principal);
+    border-radius: 30px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.servicos_icone {
+    width: 3rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.contato {
+    padding: 0% 20%;
+	color: var(--cor-principal);
+}
+
+.contato_form {
+    font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 2rem;
+    padding: 1rem 0;
+    color: var(--cor-secundaria);
+    text-align: start;
+}
+
+.input-padrao {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+}
+
+.contato__radio{
+    margin-bottom: 3rem;
+}
+
+.contato__turno {
+    color: var(--cor-principal);
+    padding: 1rem;
+}
+
+.contato__checkbox {
+    display: block;
+    padding: 2rem 0;
+}
+
+.contato_label {
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.contato_botao-enviar {
+    background-color: var(--cor-principal);
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: var(--cor-terciaria);
+    margin: 50px 0;
+}
+
+.contato_botao-enviar:hover {
+    background-color: var(--cor-apoio);
+    color: var(--cor-principal);
+}
+
+
+.informacoes {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1,5rem;
+	color: var(--cor-secundaria);
+    margin: 5% 0;
+    gap: 20px;
+}
+
+.informacoes__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-principal);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid var(--cor-principal);
+}
+
+.informacoes__mapa {
+    padding: 20px 0;
+}
+
+
+
+.rodape {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    padding: 40px 10%;
+    color: var(--cor-terciaria);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.informacoes__mapa {
+    width: 100%;
+}
+
+.rodape__img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .home, .produtos, .contato, .servicos {
+        padding: 7%;
+        margin-top: 7%;
+    }
+
+    .home__titulo, .servicos__titulo, .contato__titulo {
+        font-size: 1,5rem;
+        line-height: 16px;
+    }
+
+    .home__conteudo {
+        flex-direction: column;
+    }
+
+    .home__texto {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .home__texto-img {
+        padding: 1rem 0;
+    }
+
+    .servicos__lista-item {
+        width: 80%;
+    }
+
+    .cabecalho {
+        display: flex;
+        padding: 20px 5%;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    .cabecalho__logo {
+        display: none;
+    }
+
+    .cabecalho__logo-icon {
+       display: block;
+        width: 20px;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .home__texto-img {
+        padding: 2rem 0rem;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0px;
+    }
+
+    .home__texto {
+        width: 100%;
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+
+      a:hover {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      #menu {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+      }
+
+      #menu a {
+        display: block;
+        padding: 0.5rem;
+      }
+
+      #btn-mobile {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        #menu {
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 70px;
+          right: 0px;
+          background: var(--cor-principal);
+          transition: 0.6s;
+          z-index: 1000;
+          height: 0px;
+          visibility: hidden;
+          overflow-y: hidden;
+        }
+        #nav.active #menu {
+          height: calc(100vh - 70px);
+          visibility: visible;
+          overflow-y: auto;
+        }
+        
+        #menu a {
+          padding: 1rem 0;
+          margin: 0 1rem;
+          border-bottom: 2px solid var(--cor-terciaria);
+        }
+
+        #btn-mobile {
+          display: flex;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          gap: 0.5rem;
+        }
+        #hamburger {
+          border-top: 2px solid;
+          width: 20px;
+        }
+        #hamburger::after,
+        #hamburger::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: currentColor;
+          margin-top: 5px;
+          transition: 0.3s;
+          position: relative;
+        }
+        #nav.active #hamburger {
+          border-top-color: transparent;
+        }
+        #nav.active #hamburger::before {
+          transform: rotate(135deg);
+        }
+        #nav.active #hamburger::after {
+          transform: rotate(-135deg);
+          top: -7px;
+        }
+       
+    };
+
+}

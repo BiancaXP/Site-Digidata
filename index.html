@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="img" href="./img/logo_icon_neg.svg">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Digidata Automação</title>
+</head>
+<body class="body">
+    <header class="cabecalho">
+		<!-- <input type="search" class="cabecalho__pesquisa" placeholder="Pesquisar"> -->
+        <!-- <nav class="cabecalho__opcoes menu-lateral" id="nav" role="menu">
+            <a href="#home" class="cabecalho__opcoes-item menu-item">Home</a>
+            <a href="#produto" class="cabecalho__opcoes-item menu-item">Produtos</a>
+            <a href="#servico" class="cabecalho__opcoes-item menu-item">Serviços</a>
+            <a href="#contato" class="cabecalho__opcoes-item menu-item">Contato</a>
+		</nav>
+		<button class="menu" id="menuhamburguer" aria-label="Abrir Menu"  aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+			<img class="menu-icon"  id="hamburger" src="./img/menu_branco.svg" alt="menu" >
+		</button> -->
+		<nav id="nav">
+			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+			  <span id="hamburger"></span>
+			</button >
+			<ul id="menu" role="menu" >
+			  <li><a href="#home" class="cabecalho__opcoes-item menu-item">Sobre</a></li>
+			  <li><a href="#produto" class="cabecalho__opcoes-item menu-item">Produtos</a></li>
+			  <li><a href="#servico" class="cabecalho__opcoes-item menu-item">Serviços</a></li>
+			  <li><a href="#contato" class="cabecalho__opcoes-item menu-item">Contato</a></li>
+			</ul>
+		  </nav>
+		<div> 
+			<img class="cabecalho__logo" src="/img/logo_neg.svg" alt="Logo Digidata">
+			<img class="cabecalho__logo-icon" src="/img/logo_icon_neg.svg" alt="Logo Digidata">
+		</div>
+    </header>
+    <Main class="principal">
+        <section class="home">
+			<h1 class="home__titulo" id="home">Sobre nós</h1>
+            <div class="home__conteudo">
+				<div class="home__texto">
+					<img src="img/fachada_digidata.png" alt="Imagem da fachada" class="home__texto-img">
+					<p class="home__texto">Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus. Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.
+					Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus. Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.
+					</p>
+					<p class="home__texto">Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus. Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.Eu tellus quam id sed ultrices. Integer nunc lectus nisi, erat et ornare risus.</p>
+				</div>
+			</div>
+        </section>
+        <section class="produtos">
+            <h2 class="produtos__titulo" id="produto">Produtos</h2>
+            <!-- Slider main container -->
+			<div class="swiper">
+				<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/Cards_Produtos.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos2.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos3.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos4.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos2.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos3.png" alt="Imagem Produto"></div>
+				<div class="swiper-slide"><img src="img/Cards_Produtos4.png" alt="Imagem Produto"></div>
+				...
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+        </section>
+        <section class="servicos" id="servico">
+            <div class="servicos__conteudo">
+				<h2 class="servicos__titulo">Serviços</h2>
+				<ul class="servicos__lista">
+					<li class="servicos__lista-item"><img class="servicos_icone" src="img/Treinamento.svg" alt="Icone">Treinamento</li>
+					<li class="servicos__lista-item"><img class="servicos_icone"src="img/Suporte.svg" alt="Icone">Suporte técnico especializado</li>
+					<li class="servicos__lista-item"><img class="servicos_icone"src="img/Manutencao.svg" alt="Icone">Manutenção de balanças</li>
+					<li class="servicos__lista-item"><img class="servicos_icone"src="img/Assistencia.svg" alt="Icone">Assistência Técnica Remota Prix</li>
+					<li class="servicos__lista-item"><img class="servicos_icone"src="img/Programas.svg" alt="Icone">Programas de manutenção</li>
+					<li class="servicos__lista-item"><img class="servicos_icone"src="img/Kit_Conversao.svg" alt="Icone">Kit de conversão eletrônica</li>
+				</ul>
+			</div>
+        </section>
+        <section class="contato" id="contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <form class="contato_form">
+				<label for="nomesobrenome" class="contato_label">Nome completo</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email" class="contato_label">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone" class="contato_label">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem" class="contato_label">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset class="contato__radio">
+					<legend class="contato_label">Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend class="contato_label" >Qual horário prefere ser atendido?</legend>
+					<select class="contato__turno">
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="contato__checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+				<input type="submit" value="Enviar formulário" class="contato_botao-enviar">
+			</form>
+			<div class="informacoes">
+				<h2 class="informacoes__titulo">Horário de funcionamento</h2>
+				<p class="informacoes__infos">Funcionamos de segunda à sexta, das 8h às 18h.</p>
+				<p class="informacoes__endereco informacoes__infos">Endereço: R. Setiba, 110 - Frei Eustaquio, Belo Horizonte - MG, 30830-150</p>
+				<iframe class="informacoes__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.389722814029!2d-44.00273642370193!3d-19.907975381475566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696c0882550cb%3A0xfd0d7d5e00123071!2sR.%20Setiba%2C%20110%20-%20Gl%C3%B3ria%2C%20Belo%20Horizonte%20-%20MG%2C%2030830-150!5e0!3m2!1spt-BR!2sbr!4v1690814322669!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<p class="informacoes__telefone">Telefone de contato: (31) 3417-6264</p>
+        </section>
+        <footer class="rodape">
+			<img class="rodape__img" src="img/logo_neg.svg" alt="Logo Digidata">
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+				// speed: 400,
+				spaceBetween: 20,
+				slidesPerView: 3,
+				// navigation: {
+				// 	nextEl: '.swiper-button-next',
+				// 	prevEl: '.swiper-button-prev',
+				// },
+				pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				},
+				scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+				},
+			});
+		</script>
+		<script src="./script.js"></script>
+    </Main>
+</body>
+</html>
