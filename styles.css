@@ -61,13 +61,11 @@ header {
 }
 
 .cabecalho__opcoes-item {
-    /* align-self: center; */
     padding: 10px;
     color: var(--cor-terciaria);
 }
 
 .cabecalho__opcoes-item:hover {
-    /* background-color: var(--cor-terciaria); */
     color: var(--cor-apoio);
     text-decoration: underline;
     padding: 20px 10px;
@@ -90,7 +88,6 @@ header {
    
 }
 
-
 .home__titulo, .servicos__titulo, .contato__titulo {
     font-weight: 600;
     color: var(--cor-principal);
@@ -107,7 +104,6 @@ header {
     font-weight: 300;
     line-height: 2rem;
     margin-bottom: 1.2rem;
-
 }
 
 .produtos {
@@ -118,7 +114,6 @@ header {
     box-sizing: border-box;
     margin-top: 3rem;
 }
-
 
 .produtos__titulo {
     font-size: 2rem;
@@ -132,7 +127,6 @@ header {
 .swiper {
     width: 100%;
 }
-
 
 .servicos {
 	display: flex;
@@ -252,8 +246,6 @@ header {
     padding: 20px 0;
 }
 
-
-
 .rodape {
     background-color: var(--cor-principal);
     display: flex;
@@ -273,7 +265,6 @@ header {
     justify-content: center;
     width: 300px;
 }
-
 
 @media (max-width: 1024px) {
 
